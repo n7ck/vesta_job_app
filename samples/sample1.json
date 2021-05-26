@@ -1,0 +1,46 @@
+[
+    {
+        "entity": "Loan",
+        "display": "Loan Amount",
+        "field": "loanAmount",
+        "type": "money",
+        "conditions": {
+            "maxValue": 100000000,
+            "minValue": 10000
+        }
+    },
+    {
+        "entity": "Loan",
+        "display": "Down Payment",
+        "field": "downPaymentAmount",
+        "type": "money",
+        "conditions": {
+            "maxValue": 100000000,
+            "minValue": 10000
+        }
+    },
+    {
+        "entity": "Borrower",
+        "display": "First Name",
+        "field": "firstName",
+        "type": "string",
+        "conditions": {
+            "regex": "^[a-zA-Z]+$"
+        }
+    },
+    {
+        "entity": "Borrower",
+        "display": "Last Name",
+        "field": "lastName",
+        "type": "string",
+        "conditions": {
+            "regex": "^[a-zA-Z]+$"
+        }
+    },
+    {
+        "entity": "Borrower",
+        "display": "Birth Date",
+        "field": "birthDate",
+        "type": "date"
+    }
+]

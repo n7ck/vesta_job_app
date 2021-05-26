@@ -1,0 +1,50 @@
+[
+    {
+        "entity": "Loan",
+        "display": "Loan Amount",
+        "field": "loanAmount",
+        "type": "money"
+    },
+    {
+        "entity": "Loan",
+        "display": "Down Payment",
+        "field": "downPaymentAmount",
+        "type": "money"
+    },
+    {
+        "entity": "Loan",
+        "display": "Rate",
+        "field": "rateField",
+        "type": "money"
+    },
+    {
+        "entity": "Borrower",
+        "display": "First Name",
+        "field": "firstName",
+        "type": "string"
+    },
+    {
+        "entity": "Borrower",
+        "display": "Last Name",
+        "field": "lastName",
+        "type": "string"
+    },
+    {
+        "entity": "Borrower",
+        "display": "Partners First Name",
+        "field": "pfirstName",
+        "type": "string"
+    },
+    {
+        "entity": "Borrower",
+        "display": "Partners Last Name",
+        "field": "plastName",
+        "type": "string"
+    },
+    {
+        "entity": "Borrower",
+        "display": "Birth Date",
+        "field": "birthDate",
+        "type": "date"
+    }
+]

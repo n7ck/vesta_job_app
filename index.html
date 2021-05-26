@@ -1,0 +1,61 @@
+<!Doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Nicholas Timmer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Best to Vesta</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:700,600,400,300&amp;subset=latin,latin-ext">
+
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="datepicker/datepicker.min.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body unselectable="on">
+  <div id="center-page">
+    <h1>JSON based Form Generation</h1>
+    <section id="controlsBox">
+        <h2><img src="images/c_paper.svg" alt="document">File</h2>
+
+        <div>JSON File: <span id="fileInputJSON" ></span></div>
+
+        <input type="file" onchange="master.extract_Config_JSON_from_File(event);" >
+    </section>
+
+    <section>
+        <h2><img src="images/c_person.svg" alt="document">Borrower </h2>
+        <div id="BorrowerInputFields">
+            <!-- input fields go here -->
+        </div>
+    </section>
+
+    <section>
+        <h2><img src="images/c_cash3.svg" alt="document">Loan </h2>
+        <div id="LoanInputFields">
+            <!-- input fields go here -->
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="master.js"></script>
+    <script>master.extract_Config_JSON_from_Storage();</script> 
+
+    <!-- datePicker: https://mymth.github.io/vanillajs-datepicker/#/ -->
+    <script type="text/javascript" src="datepicker/datepicker-full.js"></script>
+    <script>
+            var datePickers = document.querySelectorAll('input[placeholder]');
+            for( ele of datePickers){
+                //ele.type = "text";
+                new Datepicker( ele, { /*format: "yyyy-mm-dd",*/ autohide: true } );
+            }
+    </script>
+
+</body>
+</html>
